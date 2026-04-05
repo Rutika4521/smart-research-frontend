@@ -1,44 +1,16 @@
-# Smart Research System - Frontend
+# React + Vite
 
-This is the frontend for the **Smart Research System**, a React application built with Vite. It provides a beautiful, responsive, and intuitive interface for researchers to explore categorized scientific literature.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Features
+Currently, two official plugins are available:
 
-- **Dynamic Search Interface:** A clean, modern search bar to query research topics.
-- **Categorized Results View:** Presents AI-analyzed research outputs in three core pillars:
-  - 📚 Past Research (Foundational)
-  - ⚙️ Current Research (Active Development)
-  - 🚀 Future Scope (Emerging)
-- **Interactive Detail Pages:** View specific papers inside each category.
-- **Advanced PDF Export:**
-  - Export full reports natively directly into PDF.
-  - Generates professional **Literature Review Tables** (using `jspdf-autotable`) with clickable links to actual papers.
-- **Search History:** Keeps track of previous searches for easy access.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Tech Stack
+## React Compiler
 
-- **Framework:** React + Vite
-- **Styling:** Custom Vanilla CSS (Modern Light Mode theme with glassmorphic accents)
-- **PDF Generation:** `jspdf` & `jspdf-autotable`
-- **HTTP Client:** `axios`
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Getting Started
+## Expanding the ESLint configuration
 
-1. **Install Dependencies:**
-   ```bash
-   npm install
-   ```
-
-2. **Run the Development Server:**
-   ```bash
-   npm run dev
-   ```
-   The application will be available at `http://localhost:5173/`.
-
-## Build for Production
-
-To generate a production-ready build:
-```bash
-npm run build
-```
-The output will reside in the `dist/` directory.
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
