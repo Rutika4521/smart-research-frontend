@@ -1,7 +1,9 @@
 import axios from 'axios';
 
+const BACKEND_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000';
+
 const api = axios.create({
-    baseURL: '/api',
+    baseURL: `${BACKEND_URL}/api`,
     headers: { 'Content-Type': 'application/json' },
     timeout: 240000, // 4 minutes — IEEE fetch + Groq AI analysis
 });
